@@ -1,83 +1,90 @@
-# AI Teaching Assistant
+# AI Teaching Assistant using RAG
 
-An AI-powered Teaching Assistant project that aims to transform educational content into an interactive learning experience. This project is currently in its early development phase, where I am building the data processing pipeline before implementing AI features.
+An AI-powered Teaching Assistant built using **Retrieval-Augmented Generation (RAG)** for a Data Science course. The assistant retrieves relevant information from course materials and generates accurate, context-aware answers to help students better understand concepts.
 
-## Project Status
+## Project Overview
 
-**Current Stage:** Initial Development
+This project aims to create an intelligent teaching assistant that can answer questions based on Data Science course content. Instead of relying only on a language model's knowledge, it retrieves relevant information from lecture materials before generating a response, resulting in more reliable and course-specific answers.
 
-The project is focused on preparing and processing lecture/video data for future AI-based analysis and interaction.
+## Features
 
-## Objectives
+- Answer questions using course materials
+- Context-aware responses with RAG
+- Speech-to-text transcription using Whisper
+- Lecture video processing pipeline
+- Semantic search using text embeddings
+- Scalable architecture for future AI features
 
-- Convert lecture videos into audio
-- Generate transcripts using OpenAI Whisper
-- Process and organize educational data
-- Build an AI assistant capable of answering questions based on lecture content
+## Workflow
 
-## Progress So Far
-
-### Completed
-
-- Installed and configured **Whisper** for speech-to-text transcription.
-- Collected and selected lecture/video datasets.
-- Installed and configured **FFmpeg**.
-- Converted video files into **MP3** format using FFmpeg.
-- Set up the initial project environment.
-
-### Next Steps
-
-- Generate transcripts from audio using Whisper.
-- Clean and preprocess the generated transcripts.
-- Split the text into manageable chunks.
-- Generate text embeddings.
-- Set up a Retrieval-Augmented Generation (RAG) pipeline.
-- Integrate a Large Language Model (LLM).
-- Build a user-friendly interface.
+```text
+Lecture Videos
+      │
+      ▼
+Extract Audio (FFmpeg)
+      │
+      ▼
+Speech-to-Text (Whisper)
+      │
+      ▼
+Transcript Cleaning
+      │
+      ▼
+Text Chunking
+      │
+      ▼
+Generate Embeddings
+      │
+      ▼
+Vector Database
+      │
+      ▼
+Retrieve Relevant Context
+      │
+      ▼
+Large Language Model (LLM)
+      │
+      ▼
+AI Teaching Assistant Response
+```
 
 ## Technologies Used
 
 - Python
 - OpenAI Whisper
 - FFmpeg
+- Retrieval-Augmented Generation (RAG)
 
-## Workflow
+## Current Progress
 
-```text
-Step 1: Lecture Videos
-          │
-          ▼
-Step 2: Speech-to-Text (Whisper)
-          │
-          ▼
-Step 3: Chunks
-          │
-          ▼
-Step 4: Text to Vectors
-          │
-          ▼
-Step 5: Query to Vectors
-          │
-          ▼
-Step 6: RAG Setup
-          │
-          ▼
-Step 7: Get Response from LLMs
-```
+- Project environment configured
+- FFmpeg installed and configured
+- Whisper installed for speech-to-text
+- Lecture/video datasets collected
+- Video-to-audio conversion pipeline completed
 
-## Current Focus
+## Roadmap
 
-At the moment, the project is focused on building a reliable data preparation pipeline. Future updates will include transcript processing, semantic search, Retrieval-Augmented Generation (RAG), and an interactive AI teaching assistant.
+- Generate lecture transcripts
+- Clean and preprocess transcripts
+- Split transcripts into chunks
+- Generate embeddings
+- Build the RAG pipeline
+- Integrate an LLM
+- Develop a user interface
+- Add lecture summarization
+- Add quiz generation
+- Implement intelligent semantic search
 
 ## Future Features
 
 - AI-powered question answering
 - Lecture summarization
-- Topic extraction
 - Quiz generation
-- Smart search across lecture content
+- Topic extraction
+- Semantic search across course materials
 - Context-aware responses
-- Web-based interface
+- Web-based user interface
 
 ## Author
 
@@ -85,4 +92,4 @@ At the moment, the project is focused on building a reliable data preparation pi
 
 ---
 
-*This repository is under active development. New features and improvements will be added regularly.*
+*This project is currently under active development. New features and improvements will be added as the AI Teaching Assistant evolves.*
